@@ -16,7 +16,7 @@ public class GridMover {
     	BoundaryManager boundaryManager = grid.getBoundaryManager();    	
     	Pathfinder pathfinder = new Pathfinder(grid.getGridArray(), boundaryManager);
     	
-    	String imagePath = "src/gameboard.png"; // Path
+    	String imagePath = "src/gameboardFlip.png"; // Path
         visualizer = new GridVisualizer(grid, boundaryManager, imagePath);
        
         System.out.println("Initial Position: " + grid.getCurrentPosition());

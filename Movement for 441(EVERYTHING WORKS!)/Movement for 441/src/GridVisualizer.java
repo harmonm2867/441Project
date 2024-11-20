@@ -52,7 +52,7 @@ public class GridVisualizer extends JFrame {
 
                 // create square for grid
                 JLabel imageLabel = new JLabel();
-                imageLabel.setText("(" + row + "," + col + ")");
+                imageLabel.setText("(" + col + "," + row + ")");
                 imageLabel.setHorizontalTextPosition(JLabel.CENTER);
                 imageLabel.setVerticalTextPosition(JLabel.CENTER);
                 imageLabel.setFont(new Font("Arial", Font.PLAIN, 8));
@@ -62,7 +62,7 @@ public class GridVisualizer extends JFrame {
                 // Add the image label to the panel
                 panel.add(imageLabel);
 
-                gridPanels[row][col] = panel;
+                gridPanels[col][row] = panel;
                 background.add(panel);
             }
         }
